@@ -1,0 +1,13 @@
+kayttaja->selain: kayttaja kirjottaa tekstikenttään muistiinpanon
+kayttaja->selain: Käyttäjä painaa "Talleta"
+
+selain->palvelin: POST fullstack-exampleapp.herokuapp.com/new_note_spa
+note left of palvelin
+  Tallennetaan pyynnön mukana saatu data tietokantaan
+end note
+palvelin->selain: status 201, ilmoitetaan onnistumisesta
+
+note left of selain
+ Selain lisää uuden muistiinpanon käyttäjän nähtäväksi
+end note
+
